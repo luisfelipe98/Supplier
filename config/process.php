@@ -5,15 +5,36 @@ session_start();
 include_once("connection.php");
 include_once("url.php");
 
-$contacts = [];
+$id;
 
-// Puxando todos os fornecedores
-$query = "SELECT * FROM contact";
+if (!empty($_GET)) {
+    $id = $_GET['id'];
+}
 
-$stmt = $conn->prepare($query);
+if (!empty($_GET)) {
+    // Puxando os dados de UM fornecedor
+    $query = "SELECT * FROM contact WHERE id = :id";
+    
+    $stmt = $conn->prepare($query);
 
-$stmt->execute();
+    $stmt->bindParam(":id", $id);
 
-$contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt->execute();
+
+    $contact = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+} else {
+    // Puxando todos os fornecedores
+    $contacts = [];
+
+    $query = "SELECT * FROM contact";
+
+    $stmt = $conn->prepare($query);
+
+    $stmt->execute();
+
+    $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
 
 ?>
