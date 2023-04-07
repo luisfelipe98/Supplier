@@ -22,7 +22,7 @@
             <tbody>
                 <?php foreach($contacts as $contact): ?>
                     <tr>
-                        <td scope="row" class="col-id"><?= $contact['id'] ?></td>
+                        <td scope="row" class="bold"><?= $contact['id'] ?></td>
                         <td scope="row"><?= $contact['name'] ?></td>
                         <td scope="row"><?= $contact['phone'] ?></td>
                         <td class="actions">

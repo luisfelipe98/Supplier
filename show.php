@@ -7,6 +7,10 @@
     <p><?= $contact['phone'] ?></p>
     <p class="bold">Observações:</p>
     <p><?= $contact['observations'] ?></p>
+    <div class="btns-container">
+        <?php include_once("templates/backbtn.html"); ?>
+        <?php include_once("templates/editbtn.html"); ?>
+    </div>
 </div>
 <?php
     include_once("templates/footer.php");

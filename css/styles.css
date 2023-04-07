@@ -19,10 +19,6 @@
   background-color: #007bff;
 }
 
-.col-id {
-  font-weight: bold;
-}
-
 .actions {
   text-align: right;
   width: 150px;
@@ -74,4 +70,34 @@
 
 .bold {
   font-weight: bold;
+}
+
+/* Botões de Voltar e Editar */
+.btns-container {
+  display: grid;
+  grid-template-columns: 75px 75px;
+  width: 500px;
+  margin: 30px auto 0;
+}
+
+#back-link {
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#back-link:hover {
+  text-decoration: none;
+}
+
+#edit-link {
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#edit-link:hover {
+  text-decoration: none;
 }
