@@ -122,3 +122,10 @@ textarea {
   width: 500px;
   margin: 30px auto 0;
 }
+
+/* MOBILE */
+@media (max-width: 480px) {
+  #home-link {
+    display: none;
+  }
+}
