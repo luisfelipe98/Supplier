@@ -4,7 +4,7 @@
 
     // Limpar a mensagem
     if (isset($_SESSION['msg'])) {
-        $printmsg = $_SESSION['msg'];
+        $printMsg = $_SESSION['msg'];
         $_SESSION['msg'] = '';
     }
 
