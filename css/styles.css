@@ -113,7 +113,7 @@
 label,
 input,
 textarea {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .btns-create-form {
@@ -121,9 +121,4 @@ textarea {
   grid-template-columns: 100px 100px;
   width: 500px;
   margin: 30px auto 0;
-}
-
-.create-back-link {
-  position: relative;
-  margin: 5px 0 0 15px;
 }

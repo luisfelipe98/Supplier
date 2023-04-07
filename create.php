@@ -15,11 +15,11 @@
         </div>
         <div class="form-group">
             <label for="observations">Observações:</label>
-            <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as Observações" required rows="3"></textarea>
+            <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações" required rows="3"></textarea>
         </div>
         <div class="btns-create-form">
-            <button type="submit" class="btn btn-primary">Cadastrar</button> 
-            <?php include_once("templates/backbtn.html"); ?>   
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <?php include_once("templates/backbtn.html"); ?>  
         </div>
     </form>
 </div>
