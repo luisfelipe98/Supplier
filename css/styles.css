@@ -101,3 +101,29 @@
 #edit-link:hover {
   text-decoration: none;
 }
+
+/*  CREATE E EDIT FORMS */
+#create-form,
+#edit-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group,
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+.btns-create-form {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  width: 500px;
+  margin: 30px auto 0;
+}
+
+.create-back-link {
+  position: relative;
+  margin: 5px 0 0 15px;
+}
