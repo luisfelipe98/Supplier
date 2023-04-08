@@ -47,6 +47,10 @@
   padding: 0;
 }
 
+.delete-form {
+  display: inline-block;
+}
+
 #empty-list-text {
   text-align: center;
 }
@@ -80,17 +84,7 @@
   margin: 30px auto 0;
 }
 
-#back-link {
-  border: 1px solid #007bff;
-  color: #007bff;
-  border-radius: 4px;
-  padding: 5px;
-}
-
-#back-link:hover {
-  text-decoration: none;
-}
-
+#back-link,
 #edit-link {
   border: 1px solid #007bff;
   color: #007bff;
@@ -98,8 +92,14 @@
   padding: 5px;
 }
 
+#back-link:hover,
 #edit-link:hover {
   text-decoration: none;
+}
+
+#edit-link-container {
+  text-decoration: none;
+  padding: 5px;
 }
 
 /*  CREATE E EDIT FORMS */
@@ -121,6 +121,15 @@ textarea {
   grid-template-columns: 100px 100px;
   width: 500px;
   margin: 30px auto 0;
+}
+
+.btns-create-form button {
+  display: inline-block;
+}
+
+#back-link-container {
+  padding: 5px;
+  margin: 0 auto;
 }
 
 /* MOBILE */
